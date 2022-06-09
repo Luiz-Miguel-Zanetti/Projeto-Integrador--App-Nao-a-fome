@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.projetonothungry.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_cadastroProdutosFragment"
+            app:destination="@id/cadastroProdutosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroProdutosFragment"
+        android:name="com.example.projetonothungry.CadastroProdutosFragment"
+        android:label="fragment_cadastro_produtos"
+        tools:layout="@layout/fragment_cadastro_produtos" >
+        <action
+            android:id="@+id/action_cadastroProdutosFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:popUpTo="@id/listFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

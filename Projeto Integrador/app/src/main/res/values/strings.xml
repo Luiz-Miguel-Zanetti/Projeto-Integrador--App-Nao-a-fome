@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Projeto Not + Hungry</string>
+    <string name="nome_produto">Produto</string>
+    <string name="valor_produto">Valor do produto :</string>
+    <string name="descrição_produto">Descrição</string>
+    <string name="categoria_produto">Categoria</string>
+    <string name="quantidade_produto">Quantidade disponivel :</string>
+    <string name="inserir_imagem">Inserir imagem</string>
+    <string name="valor">0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
