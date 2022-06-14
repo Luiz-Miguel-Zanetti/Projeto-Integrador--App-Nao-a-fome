@@ -20,18 +20,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <View
-            android:id="@+id/view5"
-            android:layout_width="match_parent"
-            android:layout_height="78dp"
-            android:background="#52BD20"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
@@ -47,7 +35,7 @@
             app:srcCompat="@drawable/not___hungry" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/editNomeProduto"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginStart="24dp"
@@ -69,7 +57,7 @@
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/editCategoriaProduto"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginStart="24dp"
@@ -88,10 +76,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintTop_toBottomOf="@+id/editNomeProduto" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/editValorProduto"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginStart="24dp"
@@ -110,10 +98,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintTop_toBottomOf="@+id/editCategoriaProduto" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/editQuantidadeProduto"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginStart="24dp"
@@ -132,10 +120,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+            app:layout_constraintTop_toBottomOf="@+id/editValorProduto" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/editImagemProduto"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginStart="24dp"
@@ -143,7 +131,6 @@
             android:layout_marginEnd="24dp"
             android:background="@drawable/rectangle46"
             android:ems="10"
-            android:hint="Quantidade:"
             android:inputType="textPersonName"
             android:paddingLeft="15dp"
             android:shadowColor="#401616"
@@ -155,7 +142,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+            app:layout_constraintTop_toBottomOf="@+id/editQuantidadeProduto" />
 
         <Button
             android:id="@+id/buttonCadastrar"
@@ -169,12 +156,10 @@
             android:fontFamily="@font/baloo_thambi"
             android:text="Cadastrar"
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/view5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
-            app:layout_constraintVertical_bias="0.36" />
+            app:layout_constraintTop_toBottomOf="@+id/editImagemProduto" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -188,80 +173,36 @@
             app:layout_constraintVertical_bias="0.43"
             app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.13"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/view5"
-            app:srcCompat="@drawable/vector_ek8" />
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.21"
-            app:layout_constraintStart_toEndOf="@+id/imageView9"
-            app:layout_constraintTop_toTopOf="@+id/view5"
-            app:srcCompat="@drawable/vector_ek7" />
-
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.3"
-            app:layout_constraintStart_toEndOf="@+id/imageView10"
-            app:layout_constraintTop_toTopOf="@+id/view5"
-            app:srcCompat="@drawable/vector_ek5" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.84"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/view5"
-            app:srcCompat="@drawable/group" />
-
         <View
             android:id="@+id/view6"
             android:layout_width="4dp"
             android:layout_height="48dp"
             android:background="#52BD20"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+            app:layout_constraintEnd_toEndOf="@+id/editQuantidadeProduto"
             app:layout_constraintHorizontal_bias="0.86"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName4" />
+            app:layout_constraintStart_toStartOf="@+id/editQuantidadeProduto"
+            app:layout_constraintTop_toTopOf="@+id/editQuantidadeProduto" />
 
         <View
             android:id="@+id/view"
             android:layout_width="4dp"
             android:layout_height="48dp"
             android:background="#52BD20"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+            app:layout_constraintEnd_toEndOf="@+id/editQuantidadeProduto"
             app:layout_constraintHorizontal_bias="0.86"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintStart_toStartOf="@+id/editCategoriaProduto"
+            app:layout_constraintTop_toTopOf="@+id/editCategoriaProduto" />
 
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@android:color/transparent"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName4"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+            app:layout_constraintBottom_toBottomOf="@+id/editQuantidadeProduto"
+            app:layout_constraintEnd_toEndOf="@+id/editQuantidadeProduto"
             app:layout_constraintHorizontal_bias="0.99"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName4"
+            app:layout_constraintStart_toStartOf="@+id/editQuantidadeProduto"
+            app:layout_constraintTop_toTopOf="@+id/editQuantidadeProduto"
             app:layout_constraintVertical_bias="0.19"
             app:srcCompat="@drawable/ic_baseline_add_24" />
 
@@ -271,11 +212,11 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/transparent"
             android:src="@drawable/ic_baseline_arrow_drop_down_24"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+            app:layout_constraintBottom_toBottomOf="@+id/editCategoriaProduto"
+            app:layout_constraintEnd_toEndOf="@+id/editCategoriaProduto"
             app:layout_constraintHorizontal_bias="0.99"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintStart_toStartOf="@+id/editCategoriaProduto"
+            app:layout_constraintTop_toTopOf="@+id/editCategoriaProduto" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
