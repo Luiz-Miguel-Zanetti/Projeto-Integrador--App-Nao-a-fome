@@ -1,12 +1,14 @@
 package com.example.projetonothungry
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Spinner
 import android.widget.Toast
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.projetonothungry.databinding.FragmentCadastroProdutosBinding
 
@@ -15,19 +17,27 @@ class CadastroProdutosFragment : Fragment() {
 
     private lateinit var binding: FragmentCadastroProdutosBinding
 
+    private val mainViewMoldel: MainViewMoldel by activityViewModels()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
 
+
         binding = FragmentCadastroProdutosBinding.inflate(layoutInflater, container, false)
 
+        mainViewMoldel.listCategoria()
+        mainViewMoldel.myCategoriaResponse.observe(viewLifecycleOwner){
+            response -> Log.d("Requisição", response.body().toString())
+        }
         binding.buttonCadastrar.setOnClickListener {
-
             inserirProduto()
 
         }
+
+
 
 
 
