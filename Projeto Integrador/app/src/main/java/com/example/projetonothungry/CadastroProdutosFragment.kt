@@ -1,19 +1,26 @@
 package com.example.projetonothungry
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Spinner
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.projetonothungry.databinding.FragmentCadastroProdutosBinding
+import com.example.projetonothungry.model.Categoria
+import com.example.projetonothungry.model.Produtos
 
 class CadastroProdutosFragment : Fragment() {
 
 
     private lateinit var binding: FragmentCadastroProdutosBinding
+    private val mainViewMoldel: MainViewMoldel by activityViewModels()
+    private var categoriaSelecionada = 0L
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,11 +30,25 @@ class CadastroProdutosFragment : Fragment() {
 
         binding = FragmentCadastroProdutosBinding.inflate(layoutInflater, container, false)
 
+
+        mainViewMoldel.listCategoria()
+
+
+
+        mainViewMoldel.myCategoriaResponse.observe(viewLifecycleOwner){
+                response -> Log.d("Requisição", response.body().toString())
+            configuraSpinnerCategoria(response.body())
+        }
+
+
+
         binding.buttonCadastrar.setOnClickListener {
 
             inserirProduto()
 
         }
+
+
 
 
 
@@ -42,21 +63,18 @@ class CadastroProdutosFragment : Fragment() {
 
 
         nomeProduto: String,
-        categoria: String,
         imagemProduto: String,
+        descriçãoProdutos: String,
         valorProduto: String,
         quantidadeProduto: String
     )
             : Boolean {
 
         return !((nomeProduto == "" || nomeProduto.length < 3 || nomeProduto.length > 24 ) ||
-                (categoria == "") ||
                 (imagemProduto == "") ||
-                (quantidadeProduto == "" || quantidadeProduto.isEmpty()) ||
-                (valorProduto == "")
-                        //valorProduto > 3.toString())
-
-                )
+                (descriçãoProdutos =="" || descriçãoProdutos.length < 10 || descriçãoProdutos.length > 30) ||
+                (  quantidadeProduto=="") ||
+                (  quantidadeProduto == ""))
 
 
     }
@@ -64,12 +82,18 @@ class CadastroProdutosFragment : Fragment() {
     private fun inserirProduto(){
 
         val nomeProduto = binding.editNomeProduto.text.toString()
-        val categoriaProduto = binding.editCategoriaProduto.text.toString()
         val imagemProduto = binding.editImagemProduto.text.toString()
+        val descricao = binding.editDescriOProduto.text.toString()
+        val categoriaProduto = Categoria(categoriaSelecionada, null, null)
         val quantidadeProduto = binding.editQuantidadeProduto.text.toString()
-        val valorProduto = binding.editValorProduto.text.toString()
+        val valorProduto = binding.editValorProduto2.text.toString()
 
-        if ( validarCampos(nomeProduto, categoriaProduto, imagemProduto, quantidadeProduto, valorProduto) ){
+        if ( validarCampos(nomeProduto,
+                 imagemProduto, descricao, quantidadeProduto, valorProduto)){
+
+
+            val produto = Produtos(0, nomeProduto,  descricao, imagemProduto, quantidadeProduto.toInt(), valorProduto.toDouble() , categoriaProduto )
+            mainViewMoldel.addProduto(produto)
 
             Toast.makeText(context, "Produto cadastrado com sucesso!", Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_cadastroProdutosFragment_to_listFragment)
@@ -85,5 +109,41 @@ class CadastroProdutosFragment : Fragment() {
 
 }
 
+   private fun configuraSpinnerCategoria(listCategoria: List<Categoria>?) {
 
-}
+        if (listCategoria != null) {
+                binding.spinnerCategoria.adapter = ArrayAdapter(
+                    requireContext(),
+                    androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,
+                    listCategoria
+                )
+
+                binding.spinnerCategoria.onItemSelectedListener =
+                    object : AdapterView.OnItemSelectedListener {
+                        override fun onItemSelected(
+                            parent: AdapterView<*>?,
+                            view: View?,
+                            position: Int,
+                            id: Long
+                        ) {
+                            val selected = binding.spinnerCategoria.selectedItem as Categoria
+
+                            categoriaSelecionada = selected.id
+
+                        }
+
+                        override fun onNothingSelected(parent: AdapterView<*>?) {
+                            TODO("Not yet implemented")
+                        }
+
+                    }
+
+
+            }
+
+        }
+
+    }
+
+
+

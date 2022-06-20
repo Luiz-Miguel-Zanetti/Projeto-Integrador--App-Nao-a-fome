@@ -5,7 +5,7 @@
       <map>
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/fundo_caixa.xml" value="0.231" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_cadastro_produto.xml" value="0.22" />
-        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_main.xml" value="0.28164556962025317" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_bag.xml" value="0.1" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_cadastro_produtos.xml" value="0.25" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_carteira.xml" value="0.22" />
@@ -13,6 +13,8 @@
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_list.xml" value="0.18" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_person.xml" value="0.22" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/prudutos_list_layout.xml" value="0.25" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/toobar_principal.xml" value="0.33" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/toolbar_principal.xml" value="0.33" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/menu/menu_navigation.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/ProjetoTM3/ProjetoNotHungry/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1945" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/ProjetoTM3/ProjetoNotHungry/app/src/main/res/drawable/fundo_caixa.xml" value="0.1945" />

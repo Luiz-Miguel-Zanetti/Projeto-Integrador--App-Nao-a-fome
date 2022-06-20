@@ -4,11 +4,13 @@ import android.widget.ImageView
 
 data class Produtos(
 
-    var nome : String,
-    var valor : Int,
-    var descrição : String,
-    var categoria : String,
-    var quantidadeDisponivel : Int,
+    var id : Long,
+    var nomeMarca : String,
+    var descricao : String,
+    var imagem : String,
+    var quantidade : Int,
+    var valor : Double,
+    var categoria : Categoria
 
 
     ) {

@@ -1,11 +1,8 @@
 package com.example.projetonothungry.adapter
 
-import android.renderscript.ScriptGroup
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.example.projetonothungry.databinding.FragmentListBinding
 import com.example.projetonothungry.databinding.PrudutosListLayoutBinding
 import com.example.projetonothungry.model.Produtos
 
@@ -27,11 +24,12 @@ class ProdutoAdapter : RecyclerView.Adapter<ProdutoAdapter.ProdutoViewHolder>() 
 
         var layout = listaProdutos[position]
 
-        holder.binding.textNomeProduto.text = layout.nome
-        holder.binding.textDescricaoProduto.text = layout.descrição
+        holder.binding.textNomeProduto.text = layout.nomeMarca
+        //holder.binding.imageProdutoAdapter.te
+        holder.binding.textDescricaoProduto.text = layout.descricao
+        holder.binding.textQuantidadeDisponivelProduto.text = layout.quantidade.toString()
+        holder.binding.textCategoriaProduto.text = layout.categoria.toString()
         holder.binding.textValorProduto.text = layout.valor.toString()
-        holder.binding.textCategoriaProduto.text = layout.categoria
-        holder.binding.textQuantidadeDisponivelProduto.text = layout.quantidadeDisponivel.toString()
 
 
 
