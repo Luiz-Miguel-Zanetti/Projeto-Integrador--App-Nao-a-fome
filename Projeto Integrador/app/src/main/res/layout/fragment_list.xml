@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ListFragment">
 
-    <include layout="@layout/toolbar_principal"/>
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerProdutos"
         android:layout_width="match_parent"

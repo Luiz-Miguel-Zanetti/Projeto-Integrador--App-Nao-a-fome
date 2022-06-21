@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.projetonothungry.ListFragment"
-        android:label="fragment_list"
+        android:label=""
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_cadastroProdutosFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/cadastroProdutosFragment"
         android:name="com.example.projetonothungry.CadastroProdutosFragment"
-        android:label="fragment_cadastro_produtos"
+        android:label=""
         tools:layout="@layout/fragment_cadastro_produtos" >
         <action
             android:id="@+id/action_cadastroProdutosFragment_to_listFragment"
@@ -25,21 +25,18 @@
             app:popUpTo="@id/listFragment"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/action_cadastroProdutosFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-        <action
             android:id="@+id/action_cadastroProdutosFragment_to_carteiraFragment"
             app:destination="@id/carteiraFragment" />
     </fragment>
     <fragment
         android:id="@+id/personFragment"
         android:name="com.example.projetonothungry.PersonFragment"
-        android:label="fragment_person"
+        android:label=""
         tools:layout="@layout/fragment_person" />
     <fragment
         android:id="@+id/carteiraFragment"
         android:name="com.example.projetonothungry.CarteiraFragment"
-        android:label="fragment_carteira"
+        android:label=""
         tools:layout="@layout/fragment_carteira" >
         <action
             android:id="@+id/action_carteiraFragment_to_personFragment"
@@ -48,7 +45,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.projetonothungry.HomeFragment"
-        android:label="fragment_home"
+        android:label=""
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_listFragment"
