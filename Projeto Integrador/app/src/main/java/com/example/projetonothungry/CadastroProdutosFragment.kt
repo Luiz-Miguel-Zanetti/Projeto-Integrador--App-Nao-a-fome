@@ -105,7 +105,7 @@ class CadastroProdutosFragment : Fragment() {
                 mainViewMoldel.updateProduto(produtos)
             } else {
                 salvar =" Produto cadastrado com sucesso!"
-                val produtos = Produtos(produtoSelecionado?.id!!,
+                val produtos = Produtos(0,
                         nomeProduto,
                         descricao,
                         imagemProduto,
