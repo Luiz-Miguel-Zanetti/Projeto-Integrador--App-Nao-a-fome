@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = (supportFragmentManager.findFragmentById
             (binding.fragmentContainerView.id)) as NavHostFragment
 
+        supportActionBar
+
         val navController = navHostFragment.navController
 
         val appBarConfiguration = AppBarConfiguration(navController.graph)
