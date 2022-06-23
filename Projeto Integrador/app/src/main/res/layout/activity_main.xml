@@ -49,7 +49,7 @@
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="78dp"
-        android:background="@color/verdeBar"
+        android:background="@color/Verde_Bottom_Nav_Bar"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
