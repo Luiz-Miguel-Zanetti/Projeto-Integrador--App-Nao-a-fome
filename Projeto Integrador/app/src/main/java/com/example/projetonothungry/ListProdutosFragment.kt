@@ -10,11 +10,12 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.projetonothungry.adapter.ProdutoAdapter
+import com.example.projetonothungry.adapter.TaskClickListener
 import com.example.projetonothungry.databinding.FragmentCadastroProdutosBinding
 import com.example.projetonothungry.databinding.FragmentListBinding
 import com.example.projetonothungry.model.Produtos
 
-class ListFragment : Fragment() {
+class ListFragment : Fragment(), TaskClickListener {
 
     private lateinit var binding: FragmentListBinding
     private val mainViewMoldel : MainViewMoldel by activityViewModels()
@@ -30,20 +31,18 @@ class ListFragment : Fragment() {
         mainViewMoldel.listProduto()
 
 
-
-
-
         val view = inflater.inflate(R.layout.fragment_list, container, false)
 
         //Configura o recycler view
         val bindingRecycler = binding.recyclerProdutos
-        val adapter = ProdutoAdapter()
+        val adapter = ProdutoAdapter(this, mainViewMoldel)
         bindingRecycler.adapter = adapter
         bindingRecycler.layoutManager = LinearLayoutManager(context)
         bindingRecycler.setHasFixedSize(true)
 
 
         binding.fabAddProduto.setOnClickListener {
+            mainViewMoldel.produtoSelecionado = null
 
             findNavController().navigate(R.id.action_listFragment_to_cadastroProdutosFragment)
 
@@ -62,6 +61,11 @@ class ListFragment : Fragment() {
         }
 
         return binding.root
+    }
+
+    override fun onTaskClickListener(produtos: Produtos) {
+        mainViewMoldel.produtoSelecionado = produtos
+        findNavController().navigate(R.id.action_listFragment_to_cadastroProdutosFragment)
     }
 
 }

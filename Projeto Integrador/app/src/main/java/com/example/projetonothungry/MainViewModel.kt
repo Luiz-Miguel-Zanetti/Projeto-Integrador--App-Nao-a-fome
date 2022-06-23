@@ -16,26 +16,25 @@ import javax.inject.Inject
 @HiltViewModel
 class MainViewMoldel @Inject constructor(
     private val repository: Repository
+) : ViewModel() {
 
+    var produtoSelecionado : Produtos? = null
 
-
-)
-    : ViewModel(){
     private var _myCategoriaResponse = MutableLiveData<Response<List<Categoria>>>()
 
-    val myCategoriaResponse : LiveData<Response<List<Categoria>>> = _myCategoriaResponse
+    val myCategoriaResponse: LiveData<Response<List<Categoria>>> = _myCategoriaResponse
 
-     private val _myProdutoResponse =MutableLiveData<Response<List<Produtos>>>()
+    private val _myProdutoResponse = MutableLiveData<Response<List<Produtos>>>()
 
-     val myProdutoResponse : LiveData<Response<List<Produtos>>> = _myProdutoResponse
+    val myProdutoResponse: LiveData<Response<List<Produtos>>> = _myProdutoResponse
 
-    fun listCategoria(){
+    fun listCategoria() {
         viewModelScope.launch {
-            try{
+            try {
                 val response = repository.listCategoria()
                 _myCategoriaResponse.value = response
 
-            }catch(e: Exception) {
+            } catch (e: Exception) {
                 Log.d("Erro!", e.message.toString())
 
             }
@@ -56,7 +55,6 @@ class MainViewMoldel @Inject constructor(
         }
 
 
-
     }
 
     fun listProduto() {
@@ -73,7 +71,17 @@ class MainViewMoldel @Inject constructor(
             }
 
         }
-
     }
 
+    fun updateProduto(produtos: Produtos) {
+        viewModelScope.launch {
+            try {
+                repository.updateProduto(produtos)
+                listProduto()
+            } catch (e:Exception){
+                Log.d("Erro", e.message.toString())
+            }
+        }
     }
+
+}
