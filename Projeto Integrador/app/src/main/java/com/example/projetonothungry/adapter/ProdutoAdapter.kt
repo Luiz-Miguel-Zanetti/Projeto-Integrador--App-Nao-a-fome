@@ -1,5 +1,7 @@
 package com.example.projetonothungry.adapter
 
+import android.app.AlertDialog
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -9,18 +11,26 @@ import com.example.projetonothungry.model.Produtos
 
 class ProdutoAdapter(
     val taskClickListener: TaskClickListener,
-    val mainViewMoldel: MainViewMoldel
+    val mainViewMoldel: MainViewMoldel,
+    val context: Context
 ) : RecyclerView.Adapter<ProdutoAdapter.ProdutoViewHolder>() {
 
 
-    class ProdutoViewHolder(val binding : PrudutosListLayoutBinding) : RecyclerView.ViewHolder(binding.root)
+    class ProdutoViewHolder(val binding: PrudutosListLayoutBinding) :
+        RecyclerView.ViewHolder(binding.root)
 
     private var listaProdutos = emptyList<Produtos>()
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProdutoViewHolder {
 
-        return ProdutoViewHolder(PrudutosListLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+        return ProdutoViewHolder(
+            PrudutosListLayoutBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
 
     }
 
@@ -37,11 +47,13 @@ class ProdutoAdapter(
         holder.binding.textValorProduto.text = produtos.valor.toString()
 
 
-        holder.itemView.setOnClickListener{
+        holder.itemView.setOnClickListener {
             taskClickListener.onTaskClickListener(produtos)
         }
 
-
+        holder.binding.deleteButton.setOnClickListener {
+            showAlertDialog(produtos.id)
+        }
 
     }
 
@@ -51,10 +63,23 @@ class ProdutoAdapter(
 
     }
 
-    fun setLista(list: List<Produtos>){
+    fun setList(list: List<Produtos>) {
 
-        listaProdutos = list.sortedByDescending {it.id  }
+        listaProdutos = list.sortedByDescending { it.id }
         notifyDataSetChanged()
+    }
+
+    private fun showAlertDialog(id:Long){
+        AlertDialog.Builder(context)
+            .setTitle("Excluir produto")
+            .setMessage("Gostaria de excluir o produto?")
+            .setPositiveButton("Sim"){
+                _,_ -> mainViewMoldel.deleteProduto(id)
+            }
+            .setNegativeButton("Não"){
+                _,_ ->
+            }.show()
+
 
     }
 

@@ -32,8 +32,9 @@ class MainActivity : AppCompatActivity() {
         //ToolBar Automatizada
         val navHostFragment = (supportFragmentManager.findFragmentById
             (binding.fragmentContainerView.id)) as NavHostFragment
-
         supportActionBar
+
+
 
         val navController = navHostFragment.navController
 

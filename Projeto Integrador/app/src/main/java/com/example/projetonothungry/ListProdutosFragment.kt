@@ -1,7 +1,6 @@
 package com.example.projetonothungry
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +10,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.projetonothungry.adapter.ProdutoAdapter
 import com.example.projetonothungry.adapter.TaskClickListener
-import com.example.projetonothungry.databinding.FragmentCadastroProdutosBinding
 import com.example.projetonothungry.databinding.FragmentListBinding
 import com.example.projetonothungry.model.Produtos
 
@@ -35,7 +33,7 @@ class ListFragment : Fragment(), TaskClickListener {
 
         //Configura o recycler view
         val bindingRecycler = binding.recyclerProdutos
-        val adapter = ProdutoAdapter(this, mainViewMoldel)
+        val adapter = ProdutoAdapter(this, mainViewMoldel, requireContext())
         bindingRecycler.adapter = adapter
         bindingRecycler.layoutManager = LinearLayoutManager(context)
         bindingRecycler.setHasFixedSize(true)
@@ -54,7 +52,7 @@ class ListFragment : Fragment(), TaskClickListener {
                 response ->
 
             if(response.body() != null) {
-                adapter.setLista(response.body()!!)
+                adapter.setList(response.body()!!)
 
             }
 

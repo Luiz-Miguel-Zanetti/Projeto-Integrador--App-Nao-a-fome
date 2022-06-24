@@ -50,5 +50,13 @@
         <action
             android:id="@+id/action_homeFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_galleryHomeFragment"
+            app:destination="@id/galleryHomeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/galleryHomeFragment"
+        android:name="com.example.projetonothungry.GalleryHomeFragment"
+        android:label="fragment_gallery_home"
+        tools:layout="@layout/fragment_gallery_home" />
 </navigation>
