@@ -15,7 +15,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:elevation="10dp"
         android:padding="12dp"
         android:paddingVertical="20dp"
@@ -60,13 +60,11 @@
             android:text="@string/descrição_produto"
             android:textColor="#8E8C8C"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
 
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintHorizontal_bias="0.04"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageProdutoAdapter"
-            app:layout_constraintVertical_bias="0.016" />
+            app:layout_constraintTop_toBottomOf="@+id/imageProdutoAdapter" />
 
         <TextView
             android:id="@+id/textQuantidade"
@@ -79,7 +77,7 @@
 
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.101"
+            app:layout_constraintHorizontal_bias="0.04"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textDescricaoProduto" />
 
@@ -87,18 +85,16 @@
             android:id="@+id/textQuantidadeDisponivelProduto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:fontFamily="@font/baloo_thambi"
             android:text="@string/valor"
             android:textColor="#52BD20"
             android:textSize="22sp"
-            app:layout_constraintBottom_toBottomOf="parent"
 
+            app:layout_constraintBottom_toBottomOf="@+id/textQuantidade"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintHorizontal_bias="0.198"
             app:layout_constraintStart_toEndOf="@+id/textQuantidade"
-            app:layout_constraintTop_toBottomOf="@+id/imageProdutoAdapter"
-            app:layout_constraintVertical_bias="0.36" />
+            app:layout_constraintTop_toTopOf="@+id/textQuantidade" />
 
         <TextView
             android:id="@+id/textValorProduto"
@@ -126,7 +122,7 @@
 
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintHorizontal_bias="0.04"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textValor" />
 
@@ -140,9 +136,22 @@
             android:textColor="#8E8C8C"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintHorizontal_bias="0.04"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textQuantidade" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="32dp"
+            android:text="Excluir produto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCategoriaProduto" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

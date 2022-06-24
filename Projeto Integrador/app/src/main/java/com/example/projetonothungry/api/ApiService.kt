@@ -3,10 +3,7 @@ package com.example.projetonothungry.api
 import com.example.projetonothungry.model.Categoria
 import com.example.projetonothungry.model.Produtos
 import retrofit2.Response
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.PUT
+import retrofit2.http.*
 
 interface ApiService {
     @GET("categoria")
@@ -20,4 +17,7 @@ interface ApiService {
 
     @PUT("produtos")
     suspend fun updateProduto(@Body produtos: Produtos): Response<Produtos>
+
+    @DELETE("produtos")
+    suspend fun deleteProduto(@Path ("id") id : Long): Response<Produtos>
 }
