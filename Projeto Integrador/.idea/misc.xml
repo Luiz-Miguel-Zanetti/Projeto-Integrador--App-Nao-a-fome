@@ -42,6 +42,7 @@
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/ProjetoTM3/ProjetoNotHungry/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1945" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/ProjetoTM3/ProjetoNotHungry/app/src/main/res/layout/activity_cadastro_produto.xml" value="0.25" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/ProjetoTM3/ProjetoNotHungry/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+<<<<<<< HEAD
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/carteira_icon.xml" value="0.1275" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/fundo_caixa.xml" value="0.33" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/home_icon.xml" value="0.1275" />
@@ -89,6 +90,19 @@
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/register_layout.xml" value="0.25" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/toolbar_principal.xml" value="0.25" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/menu/menu_navigation.xml" value="0.1" />
+=======
+        <entry key="..\:/Users/raian/Projeto-Integrador--App-Nao-a-fome/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador/app/src/main/res/layout/activity_cadastro_produto.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/raian/Projeto-Integrador--App-Nao-a-fome/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/raian/Projeto-Integrador--App-Nao-a-fome/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador/app/src/main/res/layout/fragment_cadastro_produtos.xml" value="0.20853080568720378" />
+        <entry key="..\:/Users/raian/Projeto-Integrador--App-Nao-a-fome/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador/app/src/main/res/layout/fragment_carteira.xml" value="0.10099637681159421" />
+        <entry key="..\:/Users/raian/Projeto-Integrador--App-Nao-a-fome/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador/app/src/main/res/layout/fragment_home.xml" value="0.10099637681159421" />
+        <entry key="..\:/Users/raian/Projeto-Integrador--App-Nao-a-fome/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador/app/src/main/res/layout/fragment_list.xml" value="0.10099637681159421" />
+        <entry key="..\:/Users/raian/Projeto-Integrador--App-Nao-a-fome/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador/app/src/main/res/layout/login_layout.xml" value="0.1" />
+        <entry key="..\:/Users/raian/Projeto-Integrador--App-Nao-a-fome/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador/app/src/main/res/layout/prudutos_list_layout.xml" value="0.1" />
+        <entry key="..\:/Users/raian/Projeto-Integrador--App-Nao-a-fome/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador/app/src/main/res/layout/register_layout.xml" value="0.22" />
+        <entry key="..\:/Users/raian/Projeto-Integrador--App-Nao-a-fome/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador/app/src/main/res/layout/toolbar_principal.xml" value="0.10099637681159421" />
+        <entry key="..\:/Users/raian/Projeto-Integrador--App-Nao-a-fome/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador/app/src/main/res/menu/menu_navigation.xml" value="0.17083333333333334" />
+>>>>>>> 16dad8aff76775a7e3e56c7207ea51f8a61eef8d
       </map>
     </option>
   </component>
