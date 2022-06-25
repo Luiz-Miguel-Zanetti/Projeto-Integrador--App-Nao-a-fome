@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Person_Fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/saldo_disponivel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/saldo_disponivel"
+                    android:textColor="@color/material_dynamic_neutral30"
+                    android:textSize="23sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imagem_perfil" />
+
+                <TextView
+                    android:id="@+id/pontos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/pts"
+                    android:textAlignment="viewStart"
+                    android:textColor="#319A00"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/saldo_pontos"
+                    app:layout_constraintTop_toBottomOf="@+id/imagem_perfil" />
+
+                <ImageView
+                    android:id="@+id/imagem_perfil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/todo_perfil"
+                    android:src="@drawable/ic_perfil_redondo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/saldo_pontos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/xxxx"
+                    android:textColor="#319A00"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@+id/saldo_disponivel"
+                    app:layout_constraintTop_toBottomOf="@+id/imagem_perfil" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName9"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/ic_background_registro"
+                    android:ems="10"
+                    android:hint="@string/_06454_040"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+                    tools:ignore="TextContrastCheck"
+                    android:autofillHints="" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:text="@string/cidade"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName8"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/ic_background_pequeno_registro"
+                    android:ems="10"
+                    android:hint="@string/alphavile"
+                    android:inputType="textPersonName"
+                    android:paddingStart="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+                    tools:ignore="TextContrastCheck"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_background_pequeno_registro"
+                    android:ems="10"
+                    android:hint="@string/barueri"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+                    tools:ignore="TextContrastCheck"
+                    android:autofillHints="" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:text="@string/senha"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextTextPassword2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:autofillHints=""
+                    android:background="@drawable/ic_background_registro"
+                    android:ems="10"
+                    android:hint="@string/lizaamelhor123"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:paddingStart="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:text="@string/email"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/ic_background_registro"
+                    android:ems="10"
+                    android:hint="@string/henriquepf_melhor_generation_org"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+                    tools:ignore="TextContrastCheck"
+                    android:autofillHints="" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:text="@string/nome"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/ic_background_registro"
+                    android:ems="10"
+                    android:hint="@string/henrique_felipe"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingStart="12dp"
+                    android:textIsSelectable="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/saldo_disponivel"
+                    tools:ignore="TextContrastCheck"
+                    android:autofillHints="" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="152dp"
+                    android:text="@string/bairro"
+                    android:textAlignment="viewStart"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName8"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:text="@string/cep"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName9"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName11"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="120dp"
+                    android:background="@drawable/ic_background_registro"
+                    android:ems="10"
+                    android:hint="@string/al_rio_negro"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9"
+                    tools:ignore="TextContrastCheck"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName12"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/ic_background_registro_pequeno"
+                    android:ems="10"
+                    android:hint="@string/_1500"
+                    android:inputType="textPersonName"
+                    android:paddingStart="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName11"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9"
+                    tools:ignore="TextContrastCheck"
+                    android:autofillHints="" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:text="@string/endere_o_cadastro"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName11"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="77dp"
+                    android:text="@string/n"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName12"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/button_login2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#F5B44A"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/atualizar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11"
+                    app:strokeColor="#D99E3F"
+                    app:strokeWidth="2dp"
+                    tools:ignore="TextContrastCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

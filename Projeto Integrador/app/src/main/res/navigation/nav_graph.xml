@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.projetonothungry.ListFragment"
-        android:label=""
+        android:label="Produtos"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_cadastroProdutosFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/cadastroProdutosFragment"
         android:name="com.example.projetonothungry.CadastroProdutosFragment"
-        android:label=""
+        android:label="Cadastro de Produtos"
         tools:layout="@layout/fragment_cadastro_produtos" >
         <action
             android:id="@+id/action_cadastroProdutosFragment_to_listFragment"
@@ -31,12 +31,12 @@
     <fragment
         android:id="@+id/personFragment"
         android:name="com.example.projetonothungry.PersonFragment"
-        android:label=""
+        android:label="Perfil"
         tools:layout="@layout/fragment_person" />
     <fragment
         android:id="@+id/carteiraFragment"
         android:name="com.example.projetonothungry.CarteiraFragment"
-        android:label=""
+        android:label="Carteira"
         tools:layout="@layout/fragment_carteira" >
         <action
             android:id="@+id/action_carteiraFragment_to_personFragment"
@@ -45,7 +45,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.projetonothungry.HomeFragment"
-        android:label=""
+        android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_listFragment"

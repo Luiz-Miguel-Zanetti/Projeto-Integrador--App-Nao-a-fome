@@ -6,125 +6,260 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-3dp"
-        android:contentDescription="TODO"
+        android:id="@+id/imageView"
+        android:layout_width="454dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="-5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_top_layout_login" />
+        app:srcCompat="@drawable/ic_background_tela_de_registro"
+        tools:ignore="ImageContrastCheck" />
 
-    <TextView
-        android:id="@+id/tituloDeRegistro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="190dp"
-        android:text="Registre uma conta"
-        android:textColor="#319A00"
-        android:textSize="20sp"
-        android:textStyle="bold"
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/input_email"
-        android:layout_width="310dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloDeRegistro"
-        app:srcCompat="@drawable/ic_background_input" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F5B44A"
+                android:fontFamily="sans-serif"
+                android:text="@string/registrar"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_registro9"
+                app:strokeColor="#D99E3F"
+                app:strokeWidth="2dp"
+                tools:ignore="TextContrastCheck" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:srcCompat="@drawable/ic_background_input" />
+            <ImageView
+                android:id="@+id/background_registro9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_registro7"
+                app:srcCompat="@drawable/ic_background_registro"
+                tools:ignore="ImageContrastCheck"
+                android:contentDescription="TODO" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:srcCompat="@drawable/ic_background_input" />
+            <EditText
+                android:id="@+id/editTextTextPersonName10"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="@string/endere_o"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/background_registro9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/background_registro9"
+                tools:ignore="TextContrastCheck"
+                android:autofillHints="" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:srcCompat="@drawable/ic_background_input" />
+            <ImageView
+                android:id="@+id/background_registro8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_registro6"
+                app:srcCompat="@drawable/ic_background_pequeno_registro"
+                tools:ignore="ImageContrastCheck"
+                android:contentDescription="TODO" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:backgroundTint="#F5B44A"
-        android:fontFamily="sans-serif"
-        android:text="Registrar"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        app:strokeColor="#D99E3F"
-        app:strokeWidth="2dp" />
+            <EditText
+                android:id="@+id/editTextTextPersonName7"
+                android:layout_width="170dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Numero"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/background_registro8"
+                app:layout_constraintEnd_toEndOf="@+id/background_registro8"
+                app:layout_constraintStart_toStartOf="@+id/background_registro8"
+                app:layout_constraintTop_toTopOf="@+id/background_registro8" />
 
-    <EditText
-        android:id="@+id/input_senha"
-        android:layout_width="310dp"
-        android:layout_height="51dp"
-        android:ems="10"
-        android:hint="Digite sua senha"
-        android:inputType="textPassword"
-        android:textColor="@color/material_dynamic_neutral40"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-        app:layout_constraintEnd_toEndOf="@+id/imageView8"
-        app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+            <ImageView
+                android:id="@+id/background_registro7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_registro6"
+                app:srcCompat="@drawable/ic_background_pequeno_registro" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="310dp"
-        android:layout_height="51dp"
-        android:ems="10"
-        android:hint="Digite seu Email"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/material_dynamic_neutral40"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+            <EditText
+                android:id="@+id/editTextTextPersonName6"
+                android:layout_width="170dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="CEP"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/background_registro7"
+                app:layout_constraintEnd_toEndOf="@+id/background_registro7"
+                app:layout_constraintStart_toStartOf="@+id/background_registro7"
+                app:layout_constraintTop_toTopOf="@+id/background_registro7" />
+
+            <ImageView
+                android:id="@+id/background_registro6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_registro5"
+                app:srcCompat="@drawable/ic_background_registro" />
+
+            <ImageView
+                android:id="@+id/background_registro1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tituloDeRegistro"
+                app:srcCompat="@drawable/ic_background_registro" />
+
+            <ImageView
+                android:id="@+id/background_registro2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_registro1"
+                app:srcCompat="@drawable/ic_background_registro" />
+
+            <ImageView
+                android:id="@+id/background_registro3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+                app:srcCompat="@drawable/ic_background_registro" />
+
+            <ImageView
+                android:id="@+id/background_registro4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_registro3"
+                app:srcCompat="@drawable/ic_background_registro" />
+
+            <ImageView
+                android:id="@+id/background_registro5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_registro4"
+                app:srcCompat="@drawable/ic_background_registro" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="360dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Bairro"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/background_registro6"
+                app:layout_constraintStart_toStartOf="@+id/background_registro6"
+                app:layout_constraintTop_toTopOf="@+id/background_registro6" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="360dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Confirme sua senha"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/background_registro5"
+                app:layout_constraintStart_toStartOf="@+id/background_registro5"
+                app:layout_constraintTop_toTopOf="@+id/background_registro5" />
+
+            <EditText
+                android:id="@+id/editTextCpf"
+                android:layout_width="360dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="CPF"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/background_registro3"
+                app:layout_constraintEnd_toEndOf="@+id/background_registro3"
+                app:layout_constraintStart_toStartOf="@+id/background_registro3"
+                app:layout_constraintTop_toTopOf="@+id/background_registro3" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="360dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Senha"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/background_registro4"
+                app:layout_constraintStart_toStartOf="@+id/background_registro4"
+                app:layout_constraintTop_toTopOf="@+id/background_registro4" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="360dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toBottomOf="@+id/background_registro2"
+                app:layout_constraintEnd_toEndOf="@+id/background_registro2"
+                app:layout_constraintStart_toStartOf="@+id/background_registro2"
+                app:layout_constraintTop_toTopOf="@+id/background_registro2" />
+
+            <EditText
+                android:id="@+id/editTextNome"
+                android:layout_width="360dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:hint="Nome e sobrenome"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toBottomOf="@+id/background_registro1"
+                app:layout_constraintEnd_toEndOf="@+id/background_registro1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/background_registro1" />
+
+            <TextView
+                android:id="@+id/tituloDeRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="136dp"
+                android:text="Registre uma conta"
+                android:textColor="#319A00"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

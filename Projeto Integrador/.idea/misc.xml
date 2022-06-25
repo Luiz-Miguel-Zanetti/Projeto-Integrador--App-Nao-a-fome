@@ -3,16 +3,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/fundo_caixa.xml" value="0.231" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_background_input.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_background_login.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_background_passoword.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_component_6__2_.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_component_6__3_.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_facebook_login.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_google_login.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_senha_https_24.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_titulo___toolbar.xml" value="0.1" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_top_layout_login.xml" value="0.1" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_cadastro_produto.xml" value="0.22" />
-        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_main.xml" value="0.28164556962025317" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_login.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_bag.xml" value="0.1" />
-        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_cadastro_produtos.xml" value="0.25" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_cadastro_produtos.xml" value="0.16" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_carteira.xml" value="0.22" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_first.xml" value="0.16032608695652173" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_list.xml" value="0.18" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_person.xml" value="0.22" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_second.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/login_layout.xml" value="0.33" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/prudutos_list_layout.xml" value="0.25" />
+        <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/register_layout.xml" value="0.16032608695652173" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/toobar_principal.xml" value="0.33" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/toolbar_principal.xml" value="0.33" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador/app/src/main/res/menu/menu_navigation.xml" value="0.22447916666666667" />
@@ -21,13 +42,17 @@
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/ProjetoTM3/ProjetoNotHungry/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1945" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/ProjetoTM3/ProjetoNotHungry/app/src/main/res/layout/activity_cadastro_produto.xml" value="0.25" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/ProjetoTM3/ProjetoNotHungry/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/carteira_icon.xml" value="0.1275" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/fundo_caixa.xml" value="0.33" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/home_icon.xml" value="0.1275" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_background_login.xml" value="0.18" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_carteira_navegation.xml" value="0.1275" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/ic_titulo___toolbar.xml" value="0.155" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/drawable/sacola_icon.xml" value="0.1275" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_cadastro_produto.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_login.xml" value="0.5636070853462157" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_login2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/content_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_cadastro_produtos.xml" value="0.3174089068825911" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_carteira.xml" value="0.20416666666666666" />
@@ -35,11 +60,35 @@
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_list.xml" value="0.15" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_person.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/fragment_person_.xml" value="0.22" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/login_activity.xml" value="0.25" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/login_layout.xml" value="0.25" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/prudutos_list_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/layout/register_layout.xml" value="0.22" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador/app/src/main/res/menu/menu_navigation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2115" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/drawable/carteira_icon.xml" value="0.2105" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/drawable/fundo_caixa.xml" value="0.2115" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/drawable/home_icon.xml" value="0.2115" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/drawable/ic_google_login.xml" value="0.2115" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/drawable/ic_senha_https_24.xml" value="0.2115" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/drawable/ic_titulo___toolbar.xml" value="0.2115" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/drawable/ic_top_layout_login.xml" value="0.2115" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/drawable/perfil_icon.xml" value="0.2105" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/drawable/sacola_icon.xml" value="0.2115" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/activity_main.xml" value="0.411619283065513" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/fragment_cadastro_produtos.xml" value="0.22" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/fragment_carteira.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/fragment_first.xml" value="0.18070652173913043" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/fragment_list.xml" value="0.15625" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/fragment_person_.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/fragment_second.xml" value="0.18070652173913043" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/login_layout.xml" value="0.67" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/prudutos_list_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/register_layout.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/layout/toolbar_principal.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Projeto Integrador2/app/src/main/res/menu/menu_navigation.xml" value="0.1" />
       </map>
     </option>
   </component>
