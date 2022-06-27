@@ -63,7 +63,7 @@ dependencies {
 
 
     //Hilt
-    def hilt_version = "2.40"
+    def hilt_version = "2.42"
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
