@@ -75,8 +75,8 @@ class CadastroProdutosFragment : Fragment() {
         return !((nomeProduto == "" || nomeProduto.length < 3 || nomeProduto.length > 24) ||
                 (imagemProduto == "") ||
                 (descriçãoProdutos == "" || descriçãoProdutos.length < 10 || descriçãoProdutos.length > 30) ||
-                (valorProduto.toInt() < 0 )) ||
-                (quantidadeProduto == "" || quantidadeProduto == "")
+                (valorProduto.toInt() < 0 ))
+                (quantidadeProduto == "" || quantidadeProduto.toInt() < 0 )
 
 
     }
@@ -153,6 +153,7 @@ class CadastroProdutosFragment : Fragment() {
                         val selected = binding.spinnerCategoria.selectedItem as Categoria
 
                         categoriaSelecionada = selected.id
+                        binding.editImagemCategoria.setText("" + selected)
 
                     }
 

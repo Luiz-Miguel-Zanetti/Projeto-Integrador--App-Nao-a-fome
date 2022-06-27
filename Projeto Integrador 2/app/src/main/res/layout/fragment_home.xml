@@ -13,14 +13,14 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="12dp">
+            android:layout_height="wrap_content">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout"
@@ -85,12 +85,13 @@
 
                 <HorizontalScrollView
                     android:id="@+id/horizontalScrollView"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
                     android:background="@drawable/fundo_caixa"
+                    android:padding="13dp"
+                    android:layout_marginTop="32dp"
                     android:contentDescription="@string/info_scroll"
-                    android:padding="15dp"
+
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView6">
@@ -100,27 +101,23 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
+                        <ImageView
+                            android:id="@+id/imageView24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/imagem1"/>
 
                         <ImageView
                             android:id="@+id/imageView21"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/nmh1"
-                            app:srcCompat="@drawable/nmh1" />
+                            android:src="@drawable/imagem2"/>
 
                         <ImageView
                             android:id="@+id/imageView19"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/nmh2"
-                            app:srcCompat="@drawable/nmh2" />
-
-                        <ImageView
-                            android:id="@+id/imageView20"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/nmh3"
-                            app:srcCompat="@drawable/nmh3" />
+                            android:src="@drawable/imagem3"/>
 
                     </LinearLayout>
 

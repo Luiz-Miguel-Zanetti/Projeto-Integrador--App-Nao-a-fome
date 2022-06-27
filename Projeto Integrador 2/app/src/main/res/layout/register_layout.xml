@@ -20,15 +20,15 @@
         android:id="@+id/tituloDeRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
         android:layout_marginEnd="190dp"
+        android:fontFamily="@font/baloo_thambi"
         android:text="Registre uma conta"
         android:textColor="#319A00"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <EditText
         android:id="@+id/input_email"
@@ -84,12 +84,15 @@
         app:srcCompat="@drawable/ic_background_input" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonRegistrar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/fundo_caixa"
         android:backgroundTint="#F5B44A"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/baloo_thambi"
         android:text="Registrar"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
@@ -101,30 +104,82 @@
         app:strokeWidth="2dp" />
 
     <EditText
-        android:id="@+id/input_senha"
+        android:id="@+id/editSenhaCadastro"
         android:layout_width="310dp"
         android:layout_height="51dp"
         android:ems="10"
-        android:hint="Digite sua senha"
+        android:hint="Digite sua senha:"
         android:inputType="textPassword"
-        android:textColor="@color/material_dynamic_neutral40"
+        android:textColor="#FF5C5F61"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/editTelefoneCadastro"
         android:layout_width="310dp"
         android:layout_height="51dp"
         android:ems="10"
-        android:hint="Digite seu Email"
+        android:hint="Digite seu telefone:"
+        android:inputType="textPassword"
+        android:textColor="#FF5C5F61"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    <EditText
+        android:id="@+id/editCpfCadastro"
+        android:layout_width="310dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Digite seu cpf:"
+        android:inputType="textPassword"
+        android:textColor="#FF5C5F61"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <EditText
+        android:id="@+id/editEmailCadastro"
+        android:layout_width="310dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Digite seu Email:"
         android:inputType="textEmailAddress"
-        android:textColor="@color/material_dynamic_neutral40"
+        android:textColor="#FF5C5F61"
         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="@+id/imageView7"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="115dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.323"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/buttonVoltar"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

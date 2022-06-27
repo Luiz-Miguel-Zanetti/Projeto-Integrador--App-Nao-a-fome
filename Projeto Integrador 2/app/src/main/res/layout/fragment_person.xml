@@ -173,9 +173,8 @@
                     android:minHeight="48dp"
                     android:paddingStart="12dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
+                    app:layout_constraintTop_toBottomOf="@+id/editEmailCadastro"
                     tools:ignore="TextContrastCheck" />
 
                 <TextView
@@ -185,11 +184,11 @@
                     android:layout_marginStart="66dp"
                     android:text="Email"
                     android:textSize="11sp"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
+                    app:layout_constraintBottom_toTopOf="@+id/editEmailCadastro"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress2"
+                    android:id="@+id/editEmailCadastro"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_marginStart="50dp"
@@ -315,24 +314,26 @@
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <Button
-                    android:id="@+id/button_login2"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/buttonAtualizar"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="80dp"
+                    android:background="@drawable/fundo_caixa"
                     android:backgroundTint="#F5B44A"
-                    android:fontFamily="sans-serif"
-                    android:text="atualizar"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:text="Atualizar"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11"
                     app:strokeColor="#D99E3F"
-                    app:strokeWidth="2dp"
-                    tools:ignore="TextContrastCheck" />
+                    app:strokeWidth="2dp" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
