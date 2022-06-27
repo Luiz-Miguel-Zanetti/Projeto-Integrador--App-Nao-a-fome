@@ -5,7 +5,9 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.projetonothungry.MainViewMoldel
+import com.example.projetonothungry.R
 import com.example.projetonothungry.databinding.PrudutosListLayoutBinding
 import com.example.projetonothungry.model.Produtos
 
@@ -13,6 +15,7 @@ class ProdutoAdapter(
     val taskClickListener: TaskClickListener,
     val mainViewMoldel: MainViewMoldel,
     val context: Context
+
 ) : RecyclerView.Adapter<ProdutoAdapter.ProdutoViewHolder>() {
 
 
@@ -50,6 +53,11 @@ class ProdutoAdapter(
         holder.itemView.setOnClickListener {
             taskClickListener.onTaskClickListener(produtos)
         }
+
+        Glide.with(context)
+            .load(produtos.imagem)
+            .placeholder(R.drawable.ic_baseline_add_photo_alternate_24)
+            .into(holder.binding.imageProdutoAdapter)
 
         holder.binding.deleteButton.setOnClickListener {
             showAlertDialog(produtos.id)

@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/lucin/AndroidStudioProjects/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador 2/app/src/main/res/layout/fragment_cadastro_produtos.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/lucin/AndroidStudioProjects/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador 2/app/src/main/res/layout/fragment_carteira.xml" value="0.25" />
+        <entry key="..\:/Users/lucin/AndroidStudioProjects/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador 2/app/src/main/res/layout/fragment_home.xml" value="0.3624878522837707" />
+        <entry key="..\:/Users/lucin/AndroidStudioProjects/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador 2/app/src/main/res/layout/fragment_list.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/lucin/AndroidStudioProjects/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador 2/app/src/main/res/layout/fragment_person.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/lucin/AndroidStudioProjects/Projeto-Integrador--App-Nao-a-fome/Projeto Integrador 2/app/src/main/res/layout/prudutos_list_layout.xml" value="0.16485507246376813" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador 2/app/src/main/res/drawable/ic_background_pequeno_registro.xml" value="0.127" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador 2/app/src/main/res/drawable/ic_background_registro.xml" value="0.127" />
         <entry key="..\:/Users/nz4pl/AndroidStudioProjects/Projeto Integrador 2/app/src/main/res/drawable/ic_background_registro_pequeno.xml" value="0.127" />
