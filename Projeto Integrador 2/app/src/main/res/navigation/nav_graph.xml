@@ -41,6 +41,10 @@
         <action
             android:id="@+id/action_carteiraFragment_to_personFragment"
             app:destination="@id/personFragment" />
+        <action
+            android:id="@+id/action_carteiraFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -53,6 +57,9 @@
         <action
             android:id="@+id/action_homeFragment_to_galleryHomeFragment"
             app:destination="@id/galleryHomeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_carteiraFragment"
+            app:destination="@id/carteiraFragment" />
     </fragment>
     <fragment
         android:id="@+id/galleryHomeFragment"

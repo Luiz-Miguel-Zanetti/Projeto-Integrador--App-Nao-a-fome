@@ -28,9 +28,6 @@ class ListFragment : Fragment(), TaskClickListener {
         binding = FragmentListBinding.inflate(layoutInflater, container, false)
         mainViewMoldel.listProduto()
 
-
-        val view = inflater.inflate(R.layout.fragment_list, container, false)
-
         //Configura o recycler view
         val bindingRecycler = binding.recyclerProdutos
         val adapter = ProdutoAdapter(this, mainViewMoldel, requireContext())

@@ -18,6 +18,6 @@ interface ApiService {
     @PUT("produtos")
     suspend fun updateProduto(@Body produtos: Produtos): Response<Produtos>
 
-    @DELETE("produtos")
+    @DELETE("produtos/{id}")
     suspend fun deleteProduto(@Path ("id") id : Long): Response<Produtos>
 }

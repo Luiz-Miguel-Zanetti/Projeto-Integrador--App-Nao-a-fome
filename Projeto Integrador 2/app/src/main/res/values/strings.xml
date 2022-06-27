@@ -20,4 +20,11 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="todo">TODO</string>
     <string name="esqueceu_a_senha">Esqueceu a senha ?</string>
+    <string name="saldo_disponivel">Saldo Disponivel :</string>
+    <string name="pts">pontos</string>
+    <string name="todo_perfil">Sua foto:</string>
+    <string name="xxxx">0</string>
+    <string name="_06454_040">_06454_040</string>
+    <string name="cidade">Cidade</string>
+    <string name="info_scroll">Scroll de Informações</string>
 </resources>
