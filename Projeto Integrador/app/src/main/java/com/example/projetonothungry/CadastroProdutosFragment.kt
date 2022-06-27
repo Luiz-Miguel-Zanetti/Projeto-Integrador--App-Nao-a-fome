@@ -1,4 +1,5 @@
 package com.example.projetonothungry
+
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -34,6 +35,8 @@ class CadastroProdutosFragment : Fragment() {
 
         mainViewMoldel.listCategoria()
 
+        configuraBotaoQntd()
+
 
 
         mainViewMoldel.myCategoriaResponse.observe(viewLifecycleOwner) { response ->
@@ -46,6 +49,7 @@ class CadastroProdutosFragment : Fragment() {
         binding.buttonCadastrar.setOnClickListener {
 
             inserirProduto()
+
         }
 
 
@@ -71,8 +75,8 @@ class CadastroProdutosFragment : Fragment() {
         return !((nomeProduto == "" || nomeProduto.length < 3 || nomeProduto.length > 24) ||
                 (imagemProduto == "") ||
                 (descriçãoProdutos == "" || descriçãoProdutos.length < 10 || descriçãoProdutos.length > 30) ||
-                (quantidadeProduto == "") ||
-                (quantidadeProduto == ""))
+                (valorProduto.toInt() < 0 )) ||
+                (quantidadeProduto == "" || quantidadeProduto == "")
 
 
     }
@@ -87,7 +91,7 @@ class CadastroProdutosFragment : Fragment() {
 
         if (validarCampos(
                 nomeProduto,
-                imagemProduto, descricao, quantidadeProduto, valorProduto
+                imagemProduto, descricao, valorProduto, quantidadeProduto
             )
         ) { val salvar:String
             if(produtoSelecionado != null){
@@ -173,14 +177,51 @@ class CadastroProdutosFragment : Fragment() {
         }
     }
 
-<<<<<<< HEAD
+
+    fun configuraBotaoQntd(){
+
+        var cont = 0
+
+        binding.buttonAdd.setOnClickListener {
+
+            cont++
+           binding.editQuantidadeProduto.setText("" + cont)
+
+        }
+
+        binding.buttonAdd4.setOnClickListener {
+
+            cont++
+            binding.editValorProduto2.setText("" + cont)
+
+
+        }
+
+        binding.buttonDmn.setOnClickListener {
+
+            cont--
+            binding.editQuantidadeProduto.setText("" + cont)
+
+
+        }
+
+        binding.buttonDmn2.setOnClickListener {
+
+            cont--
+            binding.editValorProduto2.setText("" + cont)
+
+
+        }
+
 
     }
 
 
-=======
-}
->>>>>>> 16dad8aff76775a7e3e56c7207ea51f8a61eef8d
+
+
+    }
+
+
 
 
 

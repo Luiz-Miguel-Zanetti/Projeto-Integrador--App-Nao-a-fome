@@ -9,9 +9,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-<<<<<<< HEAD
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -26,24 +25,27 @@
 
             <EditText
                 android:id="@+id/editNomeProduto"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="29dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/ic_background_registro"
+                android:layout_marginBottom="358dp"
+                android:background="@drawable/rectangle46"
                 android:ems="10"
                 android:hint="Nome do Produto:"
                 android:inputType="textPersonName"
-                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
                 android:shadowColor="#401616"
                 android:textColor="#8E8C8C"
                 android:textColorHighlight="#635151"
                 android:textColorHint="#8E8C8C"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/buttonAdd2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView23"
+                app:layout_constraintVertical_bias="0.61" />
 
             <EditText
                 android:id="@+id/editDescriçãoProduto"
@@ -52,11 +54,11 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/ic_background_registro"
+                android:background="@drawable/rectangle46"
                 android:ems="10"
-                android:hint="Descrição:"
+                android:hint="Descrição"
                 android:inputType="textPersonName"
-                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
                 android:shadowColor="#401616"
                 android:textColor="#8E8C8C"
                 android:textColorHighlight="#8E8C8C"
@@ -73,15 +75,17 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/ic_background_registro"
+                android:background="@drawable/rectangle46"
                 android:ems="10"
                 android:hint="Valor do Produto:"
                 android:inputType="textPersonName"
-                android:paddingStart="15dp"
+                android:paddingLeft="90dp"
                 android:shadowColor="#401616"
+                android:textAlignment="gravity"
                 android:textColor="#8E8C8C"
                 android:textColorHighlight="#8E8C8C"
                 android:textColorHint="#8E8C8C"
+                android:textColorLink="#8E8C8C"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -95,15 +99,18 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/ic_background_com_barra"
+                android:background="@drawable/rectangle46"
+                android:elegantTextHeight="false"
                 android:ems="10"
                 android:hint="Quantidade"
                 android:inputType="textPersonName"
-                android:paddingStart="15dp"
+                android:paddingLeft="112dp"
                 android:shadowColor="#401616"
+                android:textAlignment="gravity"
                 android:textColor="#8E8C8C"
                 android:textColorHighlight="#8E8C8C"
                 android:textColorHint="#8E8C8C"
+                android:textColorLink="#8E8C8C"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -112,15 +119,15 @@
             <EditText
                 android:id="@+id/editImagemProduto"
                 android:layout_width="0dp"
-                android:layout_height="52dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/ic_background_registro"
+                android:background="@drawable/rectangle46"
                 android:ems="10"
-                android:hint="@string/link_da_imagem"
+                android:hint="Link da imagem"
                 android:inputType="textPersonName"
-                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
                 android:shadowColor="#401616"
                 android:textColor="#8E8C8C"
                 android:textColorHighlight="#8E8C8C"
@@ -133,14 +140,15 @@
 
             <Button
                 android:id="@+id/buttonCadastrar"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="80dp"
+                android:background="@drawable/fundo_caixa"
                 android:backgroundTint="#F5B44A"
-                android:fontFamily="sans-serif"
-                android:text="@string/cadastrar"
+                android:fontFamily="@font/baloo_thambi"
+                android:text="Cadastrar"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -150,16 +158,105 @@
                 app:strokeColor="#D99E3F"
                 app:strokeWidth="2dp" />
 
+            <View
+                android:id="@+id/view6"
+                android:layout_width="4dp"
+                android:layout_height="41dp"
+                android:background="#52BD20"
+                app:layout_constraintBottom_toBottomOf="@+id/editQuantidadeProduto"
+                app:layout_constraintEnd_toStartOf="@+id/buttonDmn"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/editQuantidadeProduto"
+                app:layout_constraintTop_toTopOf="@+id/editQuantidadeProduto"
+                app:layout_constraintVertical_bias="0.3" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="4dp"
+                android:layout_height="41dp"
+                android:background="#52BD20"
+                app:layout_constraintBottom_toBottomOf="@+id/editQuantidadeProduto"
+                app:layout_constraintEnd_toStartOf="@+id/buttonDmn"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/buttonAdd"
+                app:layout_constraintTop_toTopOf="@+id/editQuantidadeProduto"
+                app:layout_constraintVertical_bias="0.3" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="4dp"
+                android:layout_height="41dp"
+                android:background="#52BD20"
+                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto2"
+                app:layout_constraintEnd_toStartOf="@+id/buttonDmn2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/editValorProduto2"
+                app:layout_constraintTop_toTopOf="@+id/editValorProduto2"
+                app:layout_constraintVertical_bias="0.3" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="4dp"
+                android:layout_height="41dp"
+                android:background="#52BD20"
+                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto2"
+                app:layout_constraintEnd_toStartOf="@+id/buttonDmn"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/buttonAdd4"
+                app:layout_constraintTop_toTopOf="@+id/editValorProduto2"
+                app:layout_constraintVertical_bias="0.3" />
+
             <ImageButton
-                android:id="@+id/buttonAdd"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:id="@+id/buttonDmn"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
                 android:background="@android:color/transparent"
                 app:layout_constraintBottom_toBottomOf="@+id/editQuantidadeProduto"
                 app:layout_constraintEnd_toEndOf="@+id/editQuantidadeProduto"
+                app:layout_constraintHorizontal_bias="0.98"
+                app:layout_constraintStart_toStartOf="@+id/editQuantidadeProduto"
+                app:layout_constraintTop_toBottomOf="@+id/editDescriçãoProduto"
+                app:layout_constraintVertical_bias="0.79"
+                app:srcCompat="@drawable/ic_baseline_minimize_24" />
+
+            <ImageButton
+                android:id="@+id/buttonAdd"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/editQuantidadeProduto"
+                app:layout_constraintEnd_toEndOf="@+id/editQuantidadeProduto"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toStartOf="@+id/editQuantidadeProduto"
                 app:layout_constraintTop_toTopOf="@+id/editQuantidadeProduto"
-                app:srcCompat="@drawable/ic_baseline_add_24"
-                tools:ignore="SpeakableTextPresentCheck" />
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_baseline_add_24" />
+
+            <ImageButton
+                android:id="@+id/buttonDmn2"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto2"
+                app:layout_constraintEnd_toEndOf="@+id/editValorProduto2"
+                app:layout_constraintHorizontal_bias="0.98"
+                app:layout_constraintStart_toStartOf="@+id/editValorProduto2"
+                app:layout_constraintTop_toBottomOf="@+id/editQuantidadeProduto"
+                app:layout_constraintVertical_bias="0.79"
+                app:srcCompat="@drawable/ic_baseline_minimize_24" />
+
+            <ImageButton
+                android:id="@+id/buttonAdd4"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto2"
+                app:layout_constraintEnd_toEndOf="@+id/editValorProduto2"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toStartOf="@+id/editValorProduto2"
+                app:layout_constraintTop_toTopOf="@+id/editValorProduto2"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_baseline_add_24" />
 
             <Spinner
                 android:id="@+id/spinnerCategoria"
@@ -168,14 +265,29 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
-                android:paddingStart="10dp"
-                android:background="@drawable/ic_background_com_barra_e_spinner"
+                android:background="@drawable/rectangle46"
                 android:minHeight="48dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editValorProduto2"
-                tools:ignore="SpeakableTextPresen,SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresen">
+
+
+            </Spinner>
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -196,175 +308,4 @@
 
 
 
-=======
-
-        <EditText
-            android:id="@+id/editNomeProduto"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/rectangle46"
-            android:ems="10"
-            android:hint="Nome do Produto:"
-            android:inputType="textPersonName"
-            android:paddingLeft="15dp"
-            android:shadowColor="#401616"
-            android:textColor="#8E8C8C"
-            android:textColorHighlight="#635151"
-            android:textColorHint="#8E8C8C"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/editImagemProduto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <EditText
-            android:id="@+id/editDescriçãoProduto"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/rectangle46"
-            android:ems="10"
-            android:hint="Valor do Produto:"
-            android:inputType="textPersonName"
-            android:paddingLeft="15dp"
-            android:shadowColor="#401616"
-            android:text="@string/descrição_produto"
-            android:textColor="#689F38"
-            android:textColorHighlight="#8E8C8C"
-            android:textColorHint="#8E8C8C"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/editQuantidadeProduto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editImagemProduto" />
-
-        <EditText
-            android:id="@+id/editValorProduto2"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/rectangle46"
-            android:ems="10"
-            android:hint="Valor do Produto:"
-            android:inputType="textPersonName"
-            android:paddingLeft="15dp"
-            android:shadowColor="#401616"
-            android:textColor="#8E8C8C"
-            android:textColorHighlight="#8E8C8C"
-            android:textColorHint="#8E8C8C"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/spinnerCategoria"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editQuantidadeProduto" />
-
-        <EditText
-            android:id="@+id/editQuantidadeProduto"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/rectangle46"
-            android:ems="10"
-            android:hint="Quantidade:"
-            android:inputType="textPersonName"
-            android:paddingLeft="15dp"
-            android:shadowColor="#401616"
-            android:textColor="#8E8C8C"
-            android:textColorHighlight="#8E8C8C"
-            android:textColorHint="#689F38"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/editValorProduto2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editDescriçãoProduto" />
-
-        <EditText
-            android:id="@+id/editImagemProduto"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/rectangle46"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:paddingLeft="15dp"
-            android:shadowColor="#401616"
-            android:text="@string/inserir_imagem"
-            android:textColor="#8E8C8C"
-            android:textColorHighlight="#8E8C8C"
-            android:textColorHint="#8E8C8C"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/editDescriçãoProduto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editNomeProduto" />
-
-        <Button
-            android:id="@+id/buttonCadastrar"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginEnd="80dp"
-            android:backgroundTint="#F5B44A"
-            android:fontFamily="sans-serif"
-            android:text="Cadastrar"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinnerCategoria"
-            app:strokeColor="#D99E3F"
-            app:strokeWidth="2dp" />
-
-        <View
-            android:id="@+id/view6"
-            android:layout_width="4dp"
-            android:layout_height="48dp"
-            android:background="#52BD20"
-            app:layout_constraintEnd_toEndOf="@+id/editQuantidadeProduto"
-            app:layout_constraintHorizontal_bias="0.86"
-            app:layout_constraintStart_toStartOf="@+id/editQuantidadeProduto"
-            app:layout_constraintTop_toTopOf="@+id/editQuantidadeProduto" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@android:color/transparent"
-            app:layout_constraintBottom_toBottomOf="@+id/editQuantidadeProduto"
-            app:layout_constraintEnd_toEndOf="@+id/editQuantidadeProduto"
-            app:layout_constraintHorizontal_bias="0.99"
-            app:layout_constraintStart_toStartOf="@+id/editQuantidadeProduto"
-            app:layout_constraintTop_toTopOf="@+id/editQuantidadeProduto"
-            app:layout_constraintVertical_bias="0.19"
-            app:srcCompat="@drawable/ic_baseline_add_24" />
-
-        <Spinner
-            android:id="@+id/spinnerCategoria"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="24dp"
-            android:minHeight="48dp"
-            app:layout_constraintBottom_toTopOf="@+id/buttonCadastrar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editValorProduto2"
-            tools:ignore="SpeakableTextPresen" />
->>>>>>> 16dad8aff76775a7e3e56c7207ea51f8a61eef8d
 

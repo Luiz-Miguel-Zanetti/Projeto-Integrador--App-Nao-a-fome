@@ -18,7 +18,7 @@ class MainViewMoldel @Inject constructor(
     private val repository: Repository
 ) : ViewModel() {
 
-    var produtoSelecionado : Produtos? = null
+    var produtoSelecionado: Produtos? = null
 
     private var _myCategoriaResponse = MutableLiveData<Response<List<Categoria>>>()
 
@@ -78,10 +78,20 @@ class MainViewMoldel @Inject constructor(
             try {
                 repository.updateProduto(produtos)
                 listProduto()
-            } catch (e:Exception){
+            } catch (e: Exception) {
                 Log.d("Erro", e.message.toString())
             }
         }
     }
 
+    fun deleteProduto(id: Long) {
+        viewModelScope.launch {
+            try {
+                repository.deleteProduto(id)
+                listProduto()
+            } catch (e: Exception) {
+                Log.d("Erro", e.message.toString())
+            }
+        }
+    }
 }

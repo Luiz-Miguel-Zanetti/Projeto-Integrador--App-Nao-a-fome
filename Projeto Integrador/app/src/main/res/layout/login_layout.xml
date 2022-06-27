@@ -6,6 +6,16 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:srcCompat="@drawable/ic_background_senha_input" />
+
+    <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,60 +36,17 @@
         app:srcCompat="@drawable/ic_titulo___toolbar"
         android:contentDescription="TODO" />
 
-    <ImageView
-        android:id="@+id/login_input_background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:contentDescription="login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@drawable/ic_background_login"
-        tools:ignore="ImageContrastCheck" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="280dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="62dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="Digite seu Email"
-        android:inputType="textEmailAddress"
-        android:textColor="#000000"
-        android:textColorHint="#546E7A"
-        app:layout_constraintBottom_toBottomOf="@+id/login_input_background"
-        app:layout_constraintEnd_toEndOf="@+id/login_input_background"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/login_input_background"
-        app:layout_constraintTop_toTopOf="@+id/login_input_background" />
-
-    <ImageView
-        android:id="@+id/senha_input_background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_input_background"
-        app:srcCompat="@drawable/ic_component_6__3_" />
-
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="Digite sua senha"
         android:inputType="textPassword"
         android:textColor="#000000"
         android:textColorHint="#546E7A"
-        app:layout_constraintBottom_toBottomOf="@+id/senha_input_background"
-        app:layout_constraintEnd_toEndOf="@+id/senha_input_background"
-        app:layout_constraintStart_toStartOf="@+id/senha_input_background"
-        app:layout_constraintTop_toTopOf="@+id/senha_input_background" />
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="309dp" />
 
     <Button
         android:id="@+id/button_login"
@@ -152,5 +119,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ainda_nao_tem_conta"
         app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_background_login_input" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Digite seu Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#546E7A"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="236dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.projetonothungry.ListFragment"
-        android:label="Produtos"
+        android:label=""
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_cadastroProdutosFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/cadastroProdutosFragment"
         android:name="com.example.projetonothungry.CadastroProdutosFragment"
-        android:label="Cadastro de Produtos"
+        android:label=""
         tools:layout="@layout/fragment_cadastro_produtos" >
         <action
             android:id="@+id/action_cadastroProdutosFragment_to_listFragment"
@@ -31,24 +31,39 @@
     <fragment
         android:id="@+id/personFragment"
         android:name="com.example.projetonothungry.PersonFragment"
-        android:label="Perfil"
+        android:label=""
         tools:layout="@layout/fragment_person" />
     <fragment
         android:id="@+id/carteiraFragment"
         android:name="com.example.projetonothungry.CarteiraFragment"
-        android:label="Carteira"
+        android:label=""
         tools:layout="@layout/fragment_carteira" >
         <action
             android:id="@+id/action_carteiraFragment_to_personFragment"
             app:destination="@id/personFragment" />
+        <action
+            android:id="@+id/action_carteiraFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.projetonothungry.HomeFragment"
-        android:label="Home"
+        android:label=""
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_galleryHomeFragment"
+            app:destination="@id/galleryHomeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_carteiraFragment"
+            app:destination="@id/carteiraFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/galleryHomeFragment"
+        android:name="com.example.projetonothungry.GalleryHomeFragment"
+        android:label="fragment_gallery_home"
+        tools:layout="@layout/fragment_gallery_home" />
 </navigation>
