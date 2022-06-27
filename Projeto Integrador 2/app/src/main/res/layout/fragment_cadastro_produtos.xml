@@ -30,7 +30,6 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="29dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="358dp"
                 android:background="@drawable/rectangle46"
                 android:ems="10"
                 android:hint="Nome do Produto:"
@@ -41,11 +40,9 @@
                 android:textColorHighlight="#635151"
                 android:textColorHint="#8E8C8C"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/buttonAdd2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView23"
-                app:layout_constraintVertical_bias="0.61" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView23" />
 
             <EditText
                 android:id="@+id/editDescriçãoProduto"

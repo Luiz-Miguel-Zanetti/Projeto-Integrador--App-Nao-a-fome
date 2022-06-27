@@ -59,9 +59,9 @@ class ProdutoAdapter(
             .placeholder(R.drawable.ic_baseline_add_photo_alternate_24)
             .into(holder.binding.imageProdutoAdapter)
 
-        /*holder.binding.deleteButton.setOnClickListener {
+        holder.binding.deleteButton.setOnClickListener {
             showAlertDialog(produtos.id)
-        }*/
+        }
 
     }
 
