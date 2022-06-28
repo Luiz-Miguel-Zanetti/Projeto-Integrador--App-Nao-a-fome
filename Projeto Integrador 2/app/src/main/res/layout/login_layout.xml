@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,12 +27,13 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/ic_titulo___toolbar"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/ic_titulo___toolbar" />
 
     <ImageView
         android:id="@+id/login_input_background"
@@ -83,78 +92,90 @@
         app:layout_constraintStart_toStartOf="@+id/senha_input_background"
         app:layout_constraintTop_toTopOf="@+id/senha_input_background" />
 
-    <Button
-        android:id="@+id/buttonLogar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="#F5B44A"
-        android:fontFamily="sans-serif"
-        android:text="Entrar"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/esqueceu_a_senha"
-        app:strokeColor="#D99E3F"
-        app:strokeWidth="2dp" />
+     <Button
+         android:id="@+id/buttonEntrar"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="80dp"
+         android:layout_marginTop="80dp"
+         android:layout_marginEnd="80dp"
+         android:background="@drawable/fundo_caixa"
+         android:backgroundTint="#F5B44A"
+         android:fontFamily="@font/baloo_thambi"
+         android:text="Entrar"
+         android:textColor="#FFFFFF"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/senha_input_background"
+         app:strokeColor="#D99E3F"
+         app:strokeWidth="2dp" />
 
-    <TextView
-        android:id="@+id/esqueceu_a_senha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="31dp"
-        android:text="@string/esqueceu_a_senha"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSenhaLogin" />
+     <TextView
+         android:id="@+id/esqueceu_a_senha"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="@string/esqueceu_a_senha"
+         android:textSize="16sp"
+         app:layout_constraintEnd_toEndOf="@+id/editSenhaLogin"
+         app:layout_constraintHorizontal_bias="1.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/editSenhaLogin" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLogar"
-        app:srcCompat="@drawable/ic_google_login" />
+     <ImageView
+         android:id="@+id/imageView4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="40dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.41"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/buttonEntrar"
+         app:srcCompat="@drawable/ic_google_login" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLogar"
-        app:srcCompat="@drawable/ic_facebook_login" />
+     <ImageView
+         android:id="@+id/imageView5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="24dp"
+         android:layout_marginTop="40dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.526"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/buttonEntrar"
+         app:srcCompat="@drawable/ic_facebook_login" />
 
-    <TextView
+     <TextView
         android:id="@+id/ainda_nao_tem_conta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="32dp"
         android:text="Ainda não tem conta ?"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLogar" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-    <TextView
-        android:id="@+id/textButtonCadastra_se"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/baloo_thambi"
-        android:text="Cadastre-se"
-        android:textColor="#69B645"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ainda_nao_tem_conta"
-        app:layout_constraintVertical_bias="0.110000014" />
+     <TextView
+         android:id="@+id/textButtonCadastra_se"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="16dp"
+         android:fontFamily="@font/baloo_thambi"
+         android:text="Cadastre-se"
+         android:textColor="#69B645"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="@+id/ainda_nao_tem_conta"
+         app:layout_constraintStart_toStartOf="@+id/ainda_nao_tem_conta"
+         app:layout_constraintTop_toBottomOf="@+id/ainda_nao_tem_conta"
+         app:layout_constraintVertical_bias="0.110000014" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

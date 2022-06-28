@@ -33,55 +33,47 @@
                     android:id="@+id/saldo_disponivel"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="60dp"
+                    android:layout_marginStart="65dp"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginEnd="200dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:gravity="center"
                     android:text="@string/saldo_disponivel"
+                    android:textAlignment="center"
                     android:textColor="#FF454749"
-                    android:textSize="23sp"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imagem_perfil" />
 
                 <TextView
-                    android:id="@+id/pontos"
+                    android:id="@+id/saldo_disponivel2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="50dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/pts"
-                    android:textAlignment="viewStart"
-                    android:textColor="#319A00"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="110dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:gravity="center"
+                    android:text="5 Pontos"
+                    android:textAlignment="center"
+                    android:textColor="#2E7D32"
+                    android:textSize="19sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/saldo_pontos"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imagem_perfil" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/imagem_perfil"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="228dp"
+                    android:layout_height="160dp"
                     android:layout_marginTop="20dp"
                     android:contentDescription="@string/todo_perfil"
-                    android:src="@drawable/ic_perfil_redondo"
+                    android:src="@drawable/henrique"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/saldo_pontos"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="20dp"
-                    android:text="@string/xxxx"
-                    android:textColor="#319A00"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-                    app:layout_constraintStart_toEndOf="@+id/saldo_disponivel"
-                    app:layout_constraintTop_toBottomOf="@+id/imagem_perfil"
-                    app:layout_constraintVertical_bias="0.00999999" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName9"
@@ -107,10 +99,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="66dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/baloo_thambi"
                     android:text="Cidade"
-                    android:textSize="11sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName8"
@@ -153,10 +148,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="66dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/baloo_thambi"
                     android:text="Senha"
-                    android:textSize="11sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editEmailCadastro"
+                    app:layout_constraintVertical_bias="0.52" />
 
                 <EditText
                     android:id="@+id/editTextTextPassword2"
@@ -182,10 +181,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="66dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/baloo_thambi"
                     android:text="Email"
-                    android:textSize="11sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/editEmailCadastro"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
                 <EditText
                     android:id="@+id/editEmailCadastro"
@@ -210,10 +212,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="66dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baloo_thambi"
                     android:text="Nome"
-                    android:textSize="11sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/saldo_disponivel" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName"
@@ -239,22 +244,28 @@
                     android:id="@+id/textView16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:layout_marginEnd="152dp"
+                    android:fontFamily="@font/baloo_thambi"
                     android:text="Bairro"
                     android:textAlignment="viewStart"
-                    android:textSize="11sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName8"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
                 <TextView
                     android:id="@+id/textView19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="66dp"
-                    android:text="Cep"
-                    android:textSize="11sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:text="CEP"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName9"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName11"
@@ -297,21 +308,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="66dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/baloo_thambi"
                     android:text="Endereço
 "
-                    android:textSize="11sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName11"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
 
                 <TextView
                     android:id="@+id/textView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:layout_marginEnd="77dp"
+                    android:fontFamily="@font/baloo_thambi"
                     android:text="N*"
-                    android:textSize="11sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName12"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
 
                 <Button
                     android:id="@+id/buttonAtualizar"
@@ -320,6 +337,7 @@
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="32dp"
                     android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="16dp"
                     android:background="@drawable/fundo_caixa"
                     android:backgroundTint="#F5B44A"
                     android:fontFamily="@font/baloo_thambi"
@@ -327,6 +345,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"

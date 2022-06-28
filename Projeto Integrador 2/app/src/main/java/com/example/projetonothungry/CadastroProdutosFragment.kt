@@ -87,7 +87,7 @@ class CadastroProdutosFragment : Fragment() {
         val descricao = binding.editDescriOProduto.text.toString()
         val categoriaProduto = Categoria(categoriaSelecionada, null, null)
         val quantidadeProduto = binding.editQuantidadeProduto.text.toString()
-        val valorProduto = binding.editValorProduto2.text.toString()
+        val valorProduto = binding.editValorProduto.text.toString()
 
         if (validarCampos(
                 nomeProduto,
@@ -174,7 +174,7 @@ class CadastroProdutosFragment : Fragment() {
             binding.editNomeProduto.setText(produtoSelecionado?.nomeMarca)
             binding.editDescriOProduto.setText(produtoSelecionado?.descricao)
             binding.editQuantidadeProduto.setText(produtoSelecionado?.quantidade!!.toString())
-            binding.editValorProduto2.setText(produtoSelecionado?.valor!!.toString())
+            binding.editValorProduto.setText(produtoSelecionado?.valor!!.toString())
         }
     }
 
@@ -182,6 +182,7 @@ class CadastroProdutosFragment : Fragment() {
     fun configuraBotaoQntd(){
 
         var cont = 0
+        var cont2 = 0
 
         binding.buttonAdd.setOnClickListener {
 
@@ -190,10 +191,10 @@ class CadastroProdutosFragment : Fragment() {
 
         }
 
-        binding.buttonAdd4.setOnClickListener {
+        binding.buttonAdd2.setOnClickListener {
 
-            cont++
-            binding.editValorProduto2.setText("" + cont)
+            cont2++
+            binding.editValorProduto.setText("" + cont2)
 
 
         }
@@ -208,8 +209,8 @@ class CadastroProdutosFragment : Fragment() {
 
         binding.buttonDmn2.setOnClickListener {
 
-            cont--
-            binding.editValorProduto2.setText("" + cont)
+            cont2--
+            binding.editValorProduto.setText("" + cont2)
 
 
         }
