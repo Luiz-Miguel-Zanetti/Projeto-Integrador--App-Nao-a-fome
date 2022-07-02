@@ -42,15 +42,16 @@ class ProdutoAdapter(
 
         val produtos = listaProdutos[position]
 
+
+
         holder.binding.textNomeProduto.text = produtos.nomeMarca
-        //holder.binding.imageProdutoAdapter.te
         holder.binding.textDescricaoProduto.text = produtos.descricao
         holder.binding.textQuantidadeDisponivelProduto.text = produtos.quantidade.toString()
         holder.binding.textCategoriaProduto.text = produtos.categoria.toString()
         holder.binding.textValorProduto.text = produtos.valor.toString()
 
 
-        holder.itemView.setOnClickListener {
+         holder.binding.imageProdutoAdapter.setOnClickListener {
             taskClickListener.onTaskClickListener(produtos)
         }
 

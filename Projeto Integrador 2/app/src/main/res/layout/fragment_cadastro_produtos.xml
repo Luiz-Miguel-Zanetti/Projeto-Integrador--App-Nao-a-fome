@@ -147,7 +147,7 @@
                 android:background="@drawable/fundo_caixa"
                 android:backgroundTint="#F5B44A"
                 android:fontFamily="@font/baloo_thambi"
-                android:text="Cadastrar"
+                android:text="salvar"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold"

@@ -74,9 +74,9 @@ class CadastroProdutosFragment : Fragment() {
 
         return !((nomeProduto == "" || nomeProduto.length < 3 || nomeProduto.length > 24) ||
                 (imagemProduto == "") ||
-                (descriçãoProdutos == "" || descriçãoProdutos.length < 10 || descriçãoProdutos.length > 30) ||
-                (valorProduto.toInt() < 0 ))
-                (quantidadeProduto == "" || quantidadeProduto.toInt() < 0 )
+                (descriçãoProdutos == "" || descriçãoProdutos.length < 5 || descriçãoProdutos.length > 45) ||
+                (valorProduto.toInt() < 0))
+                (quantidadeProduto.toInt() < 0)
 
 
     }
@@ -93,29 +93,32 @@ class CadastroProdutosFragment : Fragment() {
                 nomeProduto,
                 imagemProduto, descricao, valorProduto, quantidadeProduto
             )
-        ) { val salvar:String
-            if(produtoSelecionado != null){
+        ) {
+            val salvar: String
+            if (produtoSelecionado != null) {
                 salvar = "Produto atualizado com sucesso!"
-                        val produtos = Produtos(produtoSelecionado?.id!!,
+                val produtos = Produtos(
+                    produtoSelecionado?.id!!,
                     nomeProduto,
                     descricao,
                     imagemProduto,
                     quantidadeProduto.toInt(),
-                    valorProduto.toDouble(),
+                    valorProduto.toInt(),
                     categoriaProduto
                 )
                 mainViewMoldel.updateProduto(produtos)
             } else {
-                salvar =" Produto cadastrado com sucesso!"
-                val produtos = Produtos(0,
-                        nomeProduto,
-                        descricao,
-                        imagemProduto,
-                        quantidadeProduto.toInt(),
-                        valorProduto.toDouble(),
-                        categoriaProduto
-                    )
-                    mainViewMoldel.addProduto(produtos)
+                salvar = " Produto cadastrado com sucesso!"
+                val produtos = Produtos(
+                    0,
+                    nomeProduto,
+                    descricao,
+                    imagemProduto,
+                    quantidadeProduto.toInt(),
+                    valorProduto.toInt(),
+                    categoriaProduto
+                )
+                mainViewMoldel.addProduto(produtos)
             }
 
 
@@ -172,6 +175,7 @@ class CadastroProdutosFragment : Fragment() {
         produtoSelecionado = mainViewMoldel.produtoSelecionado
         if (produtoSelecionado != null) {
             binding.editNomeProduto.setText(produtoSelecionado?.nomeMarca)
+            binding.editImagemProduto.setText(produtoSelecionado?.imagem)
             binding.editDescriOProduto.setText(produtoSelecionado?.descricao)
             binding.editQuantidadeProduto.setText(produtoSelecionado?.quantidade!!.toString())
             binding.editValorProduto.setText(produtoSelecionado?.valor!!.toString())
@@ -179,7 +183,7 @@ class CadastroProdutosFragment : Fragment() {
     }
 
 
-    fun configuraBotaoQntd(){
+    fun configuraBotaoQntd() {
 
         var cont = 0
         var cont2 = 0
@@ -187,7 +191,7 @@ class CadastroProdutosFragment : Fragment() {
         binding.buttonAdd.setOnClickListener {
 
             cont++
-           binding.editQuantidadeProduto.setText("" + cont)
+            binding.editQuantidadeProduto.setText("" + cont)
 
         }
 
@@ -219,9 +223,7 @@ class CadastroProdutosFragment : Fragment() {
     }
 
 
-
-
-    }
+}
 
 
 
