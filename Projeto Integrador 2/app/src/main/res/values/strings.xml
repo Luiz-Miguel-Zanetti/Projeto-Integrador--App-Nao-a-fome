@@ -27,4 +27,16 @@
     <string name="_06454_040">_06454_040</string>
     <string name="cidade">Cidade</string>
     <string name="info_scroll">Scroll de Informações</string>
+    <string name="bem_vindo_henrique">Bem-vindo HENRIQUE</string>
+    <string name="email">email</string>
+    <string name="senha">senha</string>
+    <string name="confirme_sua_senha">confirme sua senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="botao_voltar">botao voltar</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="traco_decorativo">traço decorativo</string>
+    <string name="nome_e_sobrenome">Nome e Sobrenome</string>
+    <string name="telefone">Telefone</string>
+    <string name="cpf">CPF</string>
+    <string name="imagem_de_cadastro">imagem de cadastro</string>
 </resources>

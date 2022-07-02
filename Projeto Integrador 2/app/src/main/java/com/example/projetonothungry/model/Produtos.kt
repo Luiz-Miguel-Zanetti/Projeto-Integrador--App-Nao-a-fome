@@ -9,7 +9,7 @@ data class Produtos(
     var descricao : String,
     var imagem : String,
     var quantidade : Int,
-    var valor : Double,
+    var valor : Int,
     var categoria : Categoria
 
 

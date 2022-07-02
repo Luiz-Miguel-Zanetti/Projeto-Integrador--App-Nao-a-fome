@@ -30,7 +30,6 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="29dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="358dp"
                 android:background="@drawable/rectangle46"
                 android:ems="10"
                 android:hint="Nome do Produto:"
@@ -41,11 +40,9 @@
                 android:textColorHighlight="#635151"
                 android:textColorHint="#8E8C8C"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/buttonAdd2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView23"
-                app:layout_constraintVertical_bias="0.61" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView23" />
 
             <EditText
                 android:id="@+id/editDescriçãoProduto"
@@ -69,7 +66,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/editImagemProduto" />
 
             <EditText
-                android:id="@+id/editValorProduto2"
+                android:id="@+id/editValorProduto"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -77,9 +74,10 @@
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/rectangle46"
                 android:ems="10"
+                android:focusable="false"
+                android:gravity="center"
                 android:hint="Valor do Produto:"
                 android:inputType="textPersonName"
-                android:paddingLeft="90dp"
                 android:shadowColor="#401616"
                 android:textAlignment="gravity"
                 android:textColor="#8E8C8C"
@@ -102,9 +100,10 @@
                 android:background="@drawable/rectangle46"
                 android:elegantTextHeight="false"
                 android:ems="10"
+                android:focusable="false"
+                android:gravity="center"
                 android:hint="Quantidade"
                 android:inputType="textPersonName"
-                android:paddingLeft="112dp"
                 android:shadowColor="#401616"
                 android:textAlignment="gravity"
                 android:textColor="#8E8C8C"
@@ -148,7 +147,7 @@
                 android:background="@drawable/fundo_caixa"
                 android:backgroundTint="#F5B44A"
                 android:fontFamily="@font/baloo_thambi"
-                android:text="Cadastrar"
+                android:text="salvar"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -187,11 +186,11 @@
                 android:layout_width="4dp"
                 android:layout_height="41dp"
                 android:background="#52BD20"
-                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto2"
+                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto"
                 app:layout_constraintEnd_toStartOf="@+id/buttonDmn2"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/editValorProduto2"
-                app:layout_constraintTop_toTopOf="@+id/editValorProduto2"
+                app:layout_constraintStart_toStartOf="@+id/editValorProduto"
+                app:layout_constraintTop_toTopOf="@+id/editValorProduto"
                 app:layout_constraintVertical_bias="0.3" />
 
             <View
@@ -199,11 +198,11 @@
                 android:layout_width="4dp"
                 android:layout_height="41dp"
                 android:background="#52BD20"
-                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto2"
+                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto"
                 app:layout_constraintEnd_toStartOf="@+id/buttonDmn"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/buttonAdd4"
-                app:layout_constraintTop_toTopOf="@+id/editValorProduto2"
+                app:layout_constraintStart_toEndOf="@+id/buttonAdd2"
+                app:layout_constraintTop_toTopOf="@+id/editValorProduto"
                 app:layout_constraintVertical_bias="0.3" />
 
             <ImageButton
@@ -237,44 +236,77 @@
                 android:layout_width="51dp"
                 android:layout_height="51dp"
                 android:background="@android:color/transparent"
-                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto2"
-                app:layout_constraintEnd_toEndOf="@+id/editValorProduto2"
+                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto"
+                app:layout_constraintEnd_toEndOf="@+id/editValorProduto"
                 app:layout_constraintHorizontal_bias="0.98"
-                app:layout_constraintStart_toStartOf="@+id/editValorProduto2"
+                app:layout_constraintStart_toStartOf="@+id/editValorProduto"
                 app:layout_constraintTop_toBottomOf="@+id/editQuantidadeProduto"
                 app:layout_constraintVertical_bias="0.79"
                 app:srcCompat="@drawable/ic_baseline_minimize_24" />
 
             <ImageButton
-                android:id="@+id/buttonAdd4"
+                android:id="@+id/buttonAdd2"
                 android:layout_width="51dp"
                 android:layout_height="51dp"
                 android:background="@android:color/transparent"
-                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto2"
-                app:layout_constraintEnd_toEndOf="@+id/editValorProduto2"
+                app:layout_constraintBottom_toBottomOf="@+id/editValorProduto"
+                app:layout_constraintEnd_toEndOf="@+id/editValorProduto"
                 app:layout_constraintHorizontal_bias="0.02"
-                app:layout_constraintStart_toStartOf="@+id/editValorProduto2"
-                app:layout_constraintTop_toTopOf="@+id/editValorProduto2"
+                app:layout_constraintStart_toStartOf="@+id/editValorProduto"
+                app:layout_constraintTop_toTopOf="@+id/editValorProduto"
                 app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@drawable/ic_baseline_add_24" />
 
-            <Spinner
-                android:id="@+id/spinnerCategoria"
+            <EditText
+                android:id="@+id/editImagemCategoria"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="36dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/rectangle46"
+                android:ems="10"
+                android:focusable="auto"
+                android:hint="Categoria"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:shadowColor="#401616"
+                android:textColor="#8E8C8C"
+                android:textColorHighlight="#8E8C8C"
+                android:textColorHint="#8E8C8C"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/buttonCadastrar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editValorProduto"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Spinner
+                android:id="@+id/spinnerCategoria"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="32dp"
                 android:minHeight="48dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.98"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editValorProduto2"
-                tools:ignore="SpeakableTextPresen">
+                app:layout_constraintTop_toBottomOf="@+id/editValorProduto"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
-
-            </Spinner>
+            <View
+                android:id="@+id/view4"
+                android:layout_width="4dp"
+                android:layout_height="41dp"
+                android:background="#52BD20"
+                app:layout_constraintBottom_toBottomOf="@+id/editImagemCategoria"
+                app:layout_constraintEnd_toStartOf="@+id/spinnerCategoria"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/editImagemCategoria"
+                app:layout_constraintTop_toTopOf="@+id/editImagemCategoria"
+                app:layout_constraintVertical_bias="0.3" />
 
             <ImageView
                 android:id="@+id/imageView23"
@@ -293,7 +325,17 @@
 
     </RelativeLayout>
 
-    </ScrollView>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
 
 
 

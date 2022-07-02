@@ -5,7 +5,9 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.projetonothungry.MainViewMoldel
+import com.example.projetonothungry.R
 import com.example.projetonothungry.databinding.PrudutosListLayoutBinding
 import com.example.projetonothungry.model.Produtos
 
@@ -13,6 +15,7 @@ class ProdutoAdapter(
     val taskClickListener: TaskClickListener,
     val mainViewMoldel: MainViewMoldel,
     val context: Context
+
 ) : RecyclerView.Adapter<ProdutoAdapter.ProdutoViewHolder>() {
 
 
@@ -39,19 +42,25 @@ class ProdutoAdapter(
 
         val produtos = listaProdutos[position]
 
+
+
         holder.binding.textNomeProduto.text = produtos.nomeMarca
-        //holder.binding.imageProdutoAdapter.te
         holder.binding.textDescricaoProduto.text = produtos.descricao
         holder.binding.textQuantidadeDisponivelProduto.text = produtos.quantidade.toString()
         holder.binding.textCategoriaProduto.text = produtos.categoria.toString()
         holder.binding.textValorProduto.text = produtos.valor.toString()
 
 
-        holder.itemView.setOnClickListener {
+         holder.binding.imageProdutoAdapter.setOnClickListener {
             taskClickListener.onTaskClickListener(produtos)
         }
 
-        holder.binding.deleteButton.setOnClickListener {
+        Glide.with(context)
+            .load(produtos.imagem)
+            .placeholder(R.drawable.ic_baseline_add_photo_alternate_24)
+            .into(holder.binding.imageProdutoAdapter)
+
+        holder.binding.buttonExcluir.setOnClickListener {
             showAlertDialog(produtos.id)
         }
 
