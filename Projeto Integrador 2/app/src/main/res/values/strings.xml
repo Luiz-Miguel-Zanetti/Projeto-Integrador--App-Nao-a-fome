@@ -28,7 +28,8 @@
     <string name="cidade">Cidade</string>
     <string name="info_scroll">Scroll de Informações</string>
     <string name="bem_vindo_henrique">Bem-vindo HENRIQUE</string>
-<<<<<<< HEAD
+
+
     <string name="email">email</string>
     <string name="senha">senha</string>
     <string name="confirme_sua_senha">confirme sua senha</string>
@@ -40,6 +41,5 @@
     <string name="telefone">Telefone</string>
     <string name="cpf">CPF</string>
     <string name="imagem_de_cadastro">imagem de cadastro</string>
-=======
->>>>>>> fd0b907cfeae5a99b5208dab5883819112c92134
+
 </resources>
