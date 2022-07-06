@@ -101,7 +101,7 @@
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="100dp"
                     android:layout_marginEnd="30dp"
-                    android:hint="@string/nome_e_sobrenome"
+                    android:hint="Nome"
                     app:boxStrokeColor="#00CB65"
                     app:helperText="Apenas o primeiro e o ultimo nome"
                     app:hintTextColor="@color/Verde_Bottom_Nav_Bar"
@@ -112,6 +112,7 @@
                     app:startIconTint="#00CB65">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editNomeCadastro"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColorHint="#757575" />
@@ -138,6 +139,7 @@
                     app:startIconTint="#00CB65">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTelefoneCadastro"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number" />
@@ -163,6 +165,7 @@
                     app:startIconTint="#00CB65">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EditCpfCadastro"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"
@@ -192,6 +195,7 @@
                     app:startIconTint="#00CB65">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editConfirmSenha"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -220,6 +224,7 @@
                     app:startIconTint="#00CB65">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editSenhaCadastro"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -245,7 +250,7 @@
                     app:startIconTint="#00CB65">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/textField_Email"
+                        android:id="@+id/editEmailRegistro"
                         android:lines="1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />

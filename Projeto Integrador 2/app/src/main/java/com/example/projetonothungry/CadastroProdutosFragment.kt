@@ -75,8 +75,8 @@ class CadastroProdutosFragment : Fragment() {
         return !((nomeProduto == "" || nomeProduto.length < 3 || nomeProduto.length > 24) ||
                 (imagemProduto == "") ||
                 (descriçãoProdutos == "" || descriçãoProdutos.length < 5 || descriçãoProdutos.length > 45) ||
-                (valorProduto.toInt() < 0))
-                (quantidadeProduto.toInt() < 0)
+                (valorProduto.toInt() < 0) ||
+                (quantidadeProduto.toInt() < 0))
 
 
     }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1053992501151",
+    "project_id": "projeto-not-hungry",
+    "storage_bucket": "projeto-not-hungry.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053992501151:android:daa60660cd1fd157b1c7aa",
+        "android_client_info": {
+          "package_name": "com.example.projetonothungry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053992501151-jp8t48maqknkhsootc175l41nk1iajng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdYEmtTJVJ7izrA6BRDYBhMpBcdH8kLBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053992501151-jp8t48maqknkhsootc175l41nk1iajng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
