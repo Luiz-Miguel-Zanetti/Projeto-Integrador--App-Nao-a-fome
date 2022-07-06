@@ -47,23 +47,22 @@
         app:srcCompat="@drawable/ic_background_login"
         tools:ignore="ImageContrastCheck" />
 
-    <EditText
-        android:id="@+id/editEmailLogin"
-        android:layout_width="280dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="62dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="Digite seu Email"
-        android:inputType="textEmailAddress"
-        android:text="henriquefelipe@gmail.com"
-        android:textColor="#000000"
-        android:textColorHint="#546E7A"
-        app:layout_constraintBottom_toBottomOf="@+id/login_input_background"
-        app:layout_constraintEnd_toEndOf="@+id/login_input_background"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/login_input_background"
-        app:layout_constraintTop_toTopOf="@+id/login_input_background" />
+     <EditText
+         android:id="@+id/editEmailLogin"
+         android:layout_width="280dp"
+         android:layout_height="48dp"
+         android:layout_marginStart="62dp"
+         android:autofillHints=""
+         android:ems="10"
+         android:hint="Digite seu Email"
+         android:inputType="textEmailAddress"
+         android:textColor="#000000"
+         android:textColorHint="#546E7A"
+         app:layout_constraintBottom_toBottomOf="@+id/login_input_background"
+         app:layout_constraintEnd_toEndOf="@+id/login_input_background"
+         app:layout_constraintHorizontal_bias="0.496"
+         app:layout_constraintStart_toStartOf="@+id/login_input_background"
+         app:layout_constraintTop_toTopOf="@+id/login_input_background" />
 
     <ImageView
         android:id="@+id/senha_input_background"
@@ -75,22 +74,21 @@
         app:layout_constraintTop_toBottomOf="@+id/login_input_background"
         app:srcCompat="@drawable/ic_component_6__3_" />
 
-    <EditText
-        android:id="@+id/editSenhaLogin"
-        android:layout_width="280dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="Digite sua senha"
-        android:inputType="textPassword"
-        android:text="lizaamelhor123"
-        android:textColor="#000000"
-        android:textColorHint="#546E7A"
-        app:layout_constraintBottom_toBottomOf="@+id/senha_input_background"
-        app:layout_constraintEnd_toEndOf="@+id/senha_input_background"
-        app:layout_constraintStart_toStartOf="@+id/senha_input_background"
-        app:layout_constraintTop_toTopOf="@+id/senha_input_background" />
+     <EditText
+         android:id="@+id/editSenhaLogin"
+         android:layout_width="280dp"
+         android:layout_height="48dp"
+         android:layout_marginStart="62dp"
+         android:layout_marginTop="4dp"
+         android:ems="10"
+         android:hint="Digite sua senha"
+         android:inputType="textPassword"
+         android:textColor="#000000"
+         android:textColorHint="#546E7A"
+         app:layout_constraintBottom_toBottomOf="@+id/senha_input_background"
+         app:layout_constraintEnd_toEndOf="@+id/senha_input_background"
+         app:layout_constraintStart_toStartOf="@+id/senha_input_background"
+         app:layout_constraintTop_toTopOf="@+id/senha_input_background" />
 
      <Button
          android:id="@+id/buttonEntrar"
