@@ -36,13 +36,19 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun loginUser(email: String, senha: String) {
-        auth.signInWithEmailAndPassword(email, senha).addOnCompleteListener(this) {
-            if (it.isSuccessful) {
-                Toast.makeText(this, "Login efetuado com sucesso!", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-            } else {
-                Toast.makeText(this, "Email ou senha inválida", Toast.LENGTH_SHORT).show()
+
+        if (email.isEmpty() ||
+                senha.isEmpty()) {
+            Toast.makeText(this, "Prencha os campos!", Toast.LENGTH_SHORT).show()
+        } else {
+            auth.signInWithEmailAndPassword(email, senha).addOnCompleteListener(this) {
+                if (it.isSuccessful) {
+                    Toast.makeText(this, "Login efetuado com sucesso!", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(this, "Email ou senha inválida", Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
